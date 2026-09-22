@@ -4,7 +4,8 @@ Copy this into your project repository as `REPORT.md` (and keep it in your
 workspace `project/`). Fill it in each week and submit the link. Keep it honest
 and specific: this is graded on what it shows about your week of work.
 
-Week of: 2026-09-21
+# Week of: 
+2026-09-21
 
 # What changed this week
 
