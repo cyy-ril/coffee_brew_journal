@@ -1,10 +1,11 @@
-# Reflection Journal (template)
+# Reflection Journal
 
 Copy this into your workspace `journal/` as a weekly entry (for example
 `journal/week-1.md`). Fill it in each week and submit the link. Write about the
 specific things you actually did, not general statements.
 
-## Week of: (date)
+## Week of:
+2026-09-22
 
 ## My goal this week
 
