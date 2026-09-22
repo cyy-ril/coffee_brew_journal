@@ -6,7 +6,7 @@ and specific: this is graded on what it shows about your week of work.
 
 Week of: 2026-09-21
 
-What changed this week
+# What changed this week
 
 •	I added an exit button in the navigation area.
 
@@ -16,7 +16,7 @@ What changed this week
 
 •	Added a way for people to be able to try the app without making an account like a guest mode. They can just click a button and start using it right away.
 
-Why
+# Why
 
 •	I built an exit button to ensure that users and I can logout on the web app.
 
