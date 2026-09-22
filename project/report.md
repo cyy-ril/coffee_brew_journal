@@ -27,7 +27,7 @@ Week of: 2026-09-21
 •	I created a guest mode so people can try the app right away without the signing up 
 (I decide to give the web app a guest mode because I thought of what I usually do when I want to try different app or web app. I usually look for guest mode).
 
-What broke or what I got stuck on
+# What broke or what I got stuck on
 
 •	I am still figuring out different things, like how do I track errors example for this is the wrong file tree or syntax errors.
 
@@ -37,7 +37,7 @@ What broke or what I got stuck on
 
 •	Some of the buttons didn't line up right at first, so I had to go back and fix the spacing.
 
-What is left
+# What is left
 
 •	What I still need to be done is building out the rest of the screens.
 
