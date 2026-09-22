@@ -40,8 +40,6 @@ and specific: this is graded on what it shows about your week of work.
 
 # What is left
 
-•	What I still need to be done is building out the rest of the screens.
-
 •	Make sure that the labels on the forms is easy to use and it will not confuse the users.
 
 •	Is to keep testing.
