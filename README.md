@@ -1,12 +1,10 @@
-# Coffee Brew Journal
+# Your Project Name
 
-This project is a brewing log app that lets coffee enthusiasts or people who just 
-loves to drinks coffee record exact extraction variables like grind size of their coffee 
-beans, water temperature, ratio, and brew time, for their specific coffee beans so that 
-they can dial in and repeat their best-tasting recipes. 
+> **Replace this whole file.** It is a worked example of the README your project
+> will be graded from, not a file to leave as it is. Start with
+> [START-HERE.md](START-HERE.md).
 
-This web application is for myself and for people who love making coffee at 
-home and want to make better coffee every day without guessing every time. 
+One sentence saying what this does and who it is for.
 
 **Live site:** https://yourusername.github.io/your-repo-name/
 **API:** https://your-api.onrender.com/healthz
@@ -20,15 +18,14 @@ home and want to make better coffee every day without guessing every time.
 
 ## What it does
 
-- Log a brew with dose, yield, grind size, water temperature, brew time, a rating, and tasting notes
-- search for past brews, filtered by roast level or searched by bean name and notes
-- Delete a brew log or a bean from the library
-- It manages a library of beans, with different name, roaster, and roast level
+- Report a sighting with a place, a description and a spookiness rating
+- Browse everything reported, newest first
+- Delete a report
 
 ## Built with
 
-React on the front end, styled with plain CSS. The back end is Supabase, which handles authentication 
-and gives a PostgreSQL database with a REST layer built in.
+React and Vite on the front end, Express and PostgreSQL on the back end. The
+client is on GitHub Pages, the API on (host), the database on (host).
 
 ## Demo mode
 
