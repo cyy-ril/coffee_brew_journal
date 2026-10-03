@@ -1,22 +1,17 @@
 # AI usage
 
-This project was built with AI assistance. This file is the record of it. It is
-graded as the finals badge, and it is worth 100 points.
-
-Start it in week 1 and keep it up as you go. The commit history of this file is
-part of the evidence: a file written all at once the night before the deadline
-looks exactly like what it is.
+This project was built with AI assistance. This file shows where I used it, where it got things wrong, and which parts I wrote myself.
 
 ## 1. How I used AI
 
 At least six entries. One per real use. Every entry needs a commit link.
 
-### YYYY-MM-DD - short title
+### 2026-09-22 - Supabase log-in and sign-up
 
-- **Tool:**
-- **What I asked for:**
-- **What it gave back:**
-- **What I kept, what I changed, and why:**
+- **Tool:** I used Claude
+- **What I asked for:** I actually never built a login and sign up page before. That is why I asked how to add a sign up and log in to my React app using Supabase.
+- **What it gave back:** It gave back the Supabase signInWithPassword and signUp calls, and a form that switches between the two.
+- **What I kept, what I changed, and why:** A thing that I kept is the Supabase that calls in Auth.jsx because I did not know how to send the email and password safely. In what i change part, I changed the messages the user sees and I also added a "Continue as guest" button.
 - **Commit:** https://github.com/YOUR-USERNAME/YOUR-REPO/commit/SHA
 
 ## 2. Where the AI got it wrong
