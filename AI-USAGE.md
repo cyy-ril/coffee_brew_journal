@@ -6,7 +6,7 @@ This project was built with AI assistance. This file shows where I used it, wher
 
 I used AI for the parts that were hard for me or new to me. The easy parts, I did on my own.
  
-Note: All the commits are 2026-09-30. I worked on the code in VS Code before that, I only committed it on 2026-09-30 because I did not read the instructions clearly.
+Note: All the commits are 2026-09-30. I worked on the code in VS Code before that, I only committed it on 2026-09-30 because I did not read and listen to the instructions clearly.
 
 ### 2026-09-30 - Supabase log-in and sign-up
  
