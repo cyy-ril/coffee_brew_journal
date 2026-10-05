@@ -71,6 +71,9 @@ Create your free Supabase project this web app will depends on Supabase's built-
 React and Vite on the front end, Express and PostgreSQL on the back end. The
 client is on GitHub Pages, the API on (host), the database on (host).
 
+React and Vite on the front end. Used Supabase for the login and the Postgres database. The app talks to the Supabase straight from the browser, 
+so I do not have a server of my own. The site is hosted on Render as a static site.
+
 ## Demo mode
 
 This repository can run two ways, chosen by one environment variable at **build**
@@ -102,13 +105,13 @@ never live there. They go somewhere else:
 Page 10 is the decision page if you do not know which to pick.
 
 ## Running it yourself
+  
+  # Set up the database
 
-**The client only, in demo mode.** No database needed.
-
-    cd client
-    npm install
-    cp .env.example .env        # VITE_USE_MOCK_API stays true
-    npm run dev                 # http://localhost:5173
+Open your Supabase project, then the SQL editor.
+Run [PATH TO TABLES AND MIGRATION SQL] first.
+Then run [PATH TO ROW LEVEL SECURITY SQL].
+Policies need SELECT, INSERT, UPDATE, and DELETE, or edits fail.
 
 **The whole stack.** Needs a PostgreSQL, either local or hosted.
 
@@ -126,9 +129,9 @@ Page 10 is the decision page if you do not know which to pick.
     # 3. the client, in another terminal
     cd client
     npm install
-    cp .env.example .env
-    # set VITE_USE_MOCK_API=false
-    npm run dev
+    cp .env.example .env     # then fill in the two values
+    npm run dev              # http://localhost:5173
+
 
 Check the API on its own before you blame the client:
 
