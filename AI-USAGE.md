@@ -72,40 +72,33 @@ Note: All the commits are 2026-09-30. I worked on the code in VS Code before tha
 - **Commit:** https://github.com/cyy-ril/coffee_brew_journal/commit/35e2726fbf9bc7f7819ad9079e0925cc677cfa70
 ## 3. Who wrote what
  
-### Written by me: the footer
+### Written by me
  
-- **File:** client/src/App.jsx and client/src/App.css
+- **File:** client/src/App.jsx and client/src/App.css (the footer)
 - **Commit:** https://github.com/cyy-ril/coffee_brew_journal/commit/35e2726fbf9bc7f7819ad9079e0925cc677cfa70
 - **What it does and why it is built this way:** This shows at the bottom of every page in my web app. It also shows the app name with the cup icon from Flaticon, it also have my LinkedIn and GitHub links, and the copyright. The year comes from new Date().getFullYear(), so it changes by itself and so that I don't have to edit it.
-### Written by me: the buttons component
  
-- **File:** client/src/App.jsx
+- **File:** client/src/App.jsx (buttons component)
 - **Commit:** https://github.com/cyy-ril/coffee_brew_journal/commit/35e2726fbf9bc7f7819ad9079e0925cc677cfa70
 - **What it does and why it is built this way:** I made the Button that I use everywhere in the app. It takes a variant, a size, and an icon, and it builds the CSS class names from that. This way each button looks the same, and if I want to change how buttons look, I  can also change it in one place. The default type is "button", so that the button does not submit a form by accident.
-### Written by me: the home page with the recent brews
- 
-- **File:** client/src/App.jsx 
+
+- **File:** client/src/App.jsx (home page with the recent brews)
 - **Commit:** https://github.com/cyy-ril/coffee_brew_journal/commit/35e2726fbf9bc7f7819ad9079e0925cc677cfa70
 - **What it does and why it is built this way:** The home page shows the three recent coffee beans that user brewed. The logs are already newest first, so logs.slice(0, 3) takes the first three and shows each one as a brew card. If a user clicks a card, it opens that brew in the Journal. Then if there are no logs yet, it will show a "No brews yet" message instead. And lastly the "Add a brew" button takes the user to the Log Brew page.
-### Written by me: the Brew journal page and the BrewLogCard component
  
-- **File:** client/src/App.jsx 
+- **File:** client/src/App.jsx (Brew journal page and the BrewLogCard component)
 - **Commit:** https://github.com/cyy-ril/coffee_brew_journal/commit/35e2726fbf9bc7f7819ad9079e0925cc677cfa70
 - **What it does and why it is built this way:** For the Journal page. If a log is opened, it shows the details such as the numbers, the star rating, the cupping bars, the flavor tags, and the notes that user inputted, with an Edit, Close, and Delete buttons. For the search bar, if nothing matches, it will show a "No brews match this search" message. 
-### Written by me: the banner message
- 
-- **File:** client/src/App.jsx 
+
+- **File:** client/src/App.jsx (banner message)
 - **Commit:** https://github.com/cyy-ril/coffee_brew_journal/commit/35e2726fbf9bc7f7819ad9079e0925cc677cfa70
 - **What it does and why it is built this way:** The banner is a small message box that pops up, like "Brew log saved." or "Couldn't save that bean." It gets a message and a type whether its error or success, and the type changes the color. I built it so that users can be notified if the beans and their logs is saved of not.
-### Written by me: the navbar
  
-- **File:** client/src/App.jsx
+- **File:** client/src/App.jsx (navbar)
 - **Commit:** https://github.com/cyy-ril/coffee_brew_journal/commit/35e2726fbf9bc7f7819ad9079e0925cc677cfa70
 - **What it does and why it is built this way:** The navbar shows the logo, the app name, and a button for each page such as Home, Beans, Log Brew, Journal plus a log out/ exit button. When using on a phone, the links are hidden in a menu button. When the user picks a page, the goToPage changes the page and closes the menu. If the user is a guest, a banner will show that brews are saved on this device only, and the log out button will show "Exit guest mode" instead.
-
-### Written by me: the layout CSS for the stars, search bar, navbar, bean cards, journal details, log-in page, and flavor tags
  
-- **File:** client/src/App.css
+- **File:** client/src/App.css (layout CSS for the stars, search bar, navbar, bean cards, journal details, log-in page, and flavor tag)
 - **Commit:** https://github.com/cyy-ril/coffee_brew_journal/commit/35e2726fbf9bc7f7819ad9079e0925cc677cfa70
 - **What it does and why it is built this way:** 
   - **Navbar:** 
@@ -123,14 +116,12 @@ Note: All the commits are 2026-09-30. I worked on the code in VS Code before tha
   - **Cupping and flavors:** 
     - The .cupping-slider-header puts a slider's label and a value on one line. 
     - While, .flavor-results and .flavor-selected let the flavor tags sit in a row and wrap to the next line when there is no more room.
-### Written by me: the flavor wheel list and getFlavorName
  
-- **File:** client/src/flavorWheel.js
+- **File:** client/src/flavorWheel.js (flavor wheel list and getFlavorName)
 - **Commit:** https://github.com/cyy-ril/coffee_brew_journal/commit/35e2726fbf9bc7f7819ad9079e0925cc677cfa70
 - **What it does and why it is built this way:** For this file each flavor is saved as a path, like "Fruity > Berry > Blueberry". Then a loop goes through every category, then every group, every flavor, and adds each one to one big list. While the search uses that list. For getFlavorName it make sure to cut the path at every " > " and it keeps the last piece, so that the tag only shows as "Blueberry".
-### Written by me: makeGuestId
  
-- **File:** client/src/App.jsx
+- **File:** client/src/App.jsx (makeGuestId)
 - **Commit:** https://github.com/cyy-ril/coffee_brew_journal/commit/35e2726fbf9bc7f7819ad9079e0925cc677cfa70
 - **What it does and why it is built this way:** The guests have no database, so nobody gives their beans and brews an id. For this function it makes one by joining the word "guest", and the current time, and a short random piece, so no two ids are the same and will not break.
 ### The AI-written part I understand best: loading beans and logs (Promise.all)
