@@ -104,10 +104,10 @@ Page 10 is the decision page if you do not know which to pick.
 ## Running it yourself
   **Set up the database**
   
-    - Open your Supabase project, then the SQL editor.
-    - Run [PATH TO TABLES AND MIGRATION SQL] first.
-    - Then run [PATH TO ROW LEVEL SECURITY SQL].
-    - Policies need SELECT, INSERT, UPDATE, and DELETE, or edits fail.
+  - Open your Supabase project, then the SQL editor.
+  - Run [PATH TO TABLES AND SCHEMA SQL] first.
+  - Then run [PATH TO ROW LEVEL SECURITY SQL].
+  - Policies need SELECT, INSERT, UPDATE, and DELETE, or edits fail.
 
 **Set up the client.**
 
