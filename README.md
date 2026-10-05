@@ -1,26 +1,70 @@
-# Your Project Name
+# Coffee Brew Journal
 
 > **Replace this whole file.** It is a worked example of the README your project
 > will be graded from, not a file to leave as it is. Start with
 > [START-HERE.md](START-HERE.md).
 
-One sentence saying what this does and who it is for.
+## 1. Overview
 
-**Live site:** https://yourusername.github.io/your-repo-name/
-**API:** https://your-api.onrender.com/healthz
+My project Coffee Brew Journal is a web app for home baristas to keep track of their pour-over and espresso brews, this lets you keep a library of beans, log the recipe and result of each brew (dose, yield, grind, water temp, time, ratio, rating, tasting notes) a user made, and there is also a search or filter for the past brews to find what worked. It's built for anyone who wants to repeat their coffee instead of guessing what to make every time a user makes coffee.
+
+**Live site:** https://coffee-brew-journal.onrender.com
 **Demo video:** (link)
 
-> **This deployment is running in demo mode.** The interface is real; the backend
-> is simulated in your browser so the site works without a server. See
-> [Demo mode](#demo-mode) below. Delete this quote once your API is live.
+## 2. Setup and installation
 
-![A screenshot of the main screen](docs/assets/screenshot.png)
+**What to install first (runtime, database, tools):**
+Get the latest version of Node.js. This also need a code editor (VS Code recommended) with a git for cloning. You'll also need a free Supabase account, this is where your data and user accounts live.
+
+**How to get the code (clone)**
+```bash
+git clone <your-repo-url>
+cd <your-repo-folder>
+```
+**How to install dependencies**
+```bash
+cd client
+npm install
+```
+**Environment and configuration** 
+
+Create a file called .env in your project main folder. This is where you put your Supabase keys so the app can use them, without putting them directly in the code.
+```
+VITE_SUPABASE_URL = your-project-ref.supabase.co
+VITE_SUPABASE_ANON_KEY = your-anon-public-key
+```
+**How to set up and seed the database**
+
+Create your free Supabase project this web app will depends on Supabase's built-in authentication. In your projects in the SQL editor, run the schema file to create the beans and logs tables. Then go to the Authentication settings and turn on the email/password sign-in. 
+
+
+![A screenshot of the main screen]
+
+[Login Page] [https://github.com/HAU-6APSI/student-6apsi-2215-cyy-ril/blob/main/project/website-screenshots/Login-page.png]
+
+[Signup Page] [https://github.com/HAU-6APSI/student-6apsi-2215-cyy-ril/blob/main/project/website-screenshots/Signup-page.png]
+
+[Home Page] [https://github.com/HAU-6APSI/student-6apsi-2215-cyy-ril/blob/main/project/website-screenshots/Home-page.png]
+
+[Bean Library Page] [https://github.com/HAU-6APSI/student-6apsi-2215-cyy-ril/blob/main/project/website-screenshots/Beanlibrary-page.png]
+                    [https://github.com/HAU-6APSI/student-6apsi-2215-cyy-ril/blob/main/project/website-screenshots/Beanlibrary-page-withupdate.png]
+
+[Log A Brew Page] [https://github.com/HAU-6APSI/student-6apsi-2215-cyy-ril/blob/main/project/website-screenshots/LogABrew-page.png]
+                  [https://github.com/HAU-6APSI/student-6apsi-2215-cyy-ril/blob/main/project/website-screenshots/LogABrew-page-withupdate1.png]
+                  [https://github.com/HAU-6APSI/student-6apsi-2215-cyy-ril/blob/main/project/website-screenshots/LogABrew-page-withupdate2.png]
+
+[Journal Page]  [https://github.com/HAU-6APSI/student-6apsi-2215-cyy-ril/blob/main/project/website-screenshots/Journal-page.png]
+                [https://github.com/HAU-6APSI/student-6apsi-2215-cyy-ril/blob/main/project/website-screenshots/Journal-page-withupdate1.png]
+                [https://github.com/HAU-6APSI/student-6apsi-2215-cyy-ril/blob/main/project/website-screenshots/Journal-page-withupdate2.png]
 
 ## What it does
 
-- Report a sighting with a place, a description and a spookiness rating
-- Browse everything reported, newest first
-- Delete a report
+- Sign up, log in, or continue as a guest (guest brews stay on that device only)
+- Add beans with a name, roaster, origin, and roast date
+- Log a brew: dose, yield, grind, temperature, and time
+- Rate each brew with a stars, and sliders for rate acidity, sweetness, body, and balance
+- Pick a flavor tags from a flavor list, with search and categories
+- Browse the Journal: search, filter by roast, sort by Newest first, Oldest first, Highest rated, Lowest rated, edit, and delete
 
 ## Built with
 
