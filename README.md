@@ -146,13 +146,30 @@ What protects the data is the Row Level Security in the database (Supabase). Nev
 
 ## Project structure
 
-    client/          React front end, built by Vite
-      src/api/       ONE interface, two implementations, chosen by a variable
-      src/components/
-    server/          Express API
-      db/            pool, schema.sql, seed.sql, and a runner for them
-    compose.yml      only if you self-host
-    docs/            your planning documents and weekly reports
+    coffee_brew_journal/
+    ├── client/                    
+    │   ├── src/
+    │   │   ├── assets/		            # images used in the UI
+    │   │   ├── App.jsx		            # routing, auth/guest state, all screens
+    │   │   ├── App.css		            # styling
+    │   │   ├── Auth.jsx		          # login / sign-up / guest-mode screen
+    │   │   ├── main.jsx		          # React entry point
+    │   │   ├── supabaseClient.js  	  # Supabase client setup (this reads env vars)
+    │   │   └── flavorWheel.js	      # tasting-note categories for the flavor picker
+    │   ├── .env			                # local environment variables (not committed)
+    │   ├── .env.example
+    │   ├── index.html
+    │   ├── package.json
+    │   ├── package-lock.json
+    │   └── vite.config.js
+    ├── supabase/
+    │   └── schema.sql                # full database setup (tables, columns, RLS policies); this is run in the Supabase SQL Editor
+    │   └── alter-tables.sql		      #only for the older version of my database; this is already included in schema.sql	
+    ├── server/			                  # not used
+    ├── README.md		                  # project overview and setup instructions
+    ├── AI-USAGE.md		                # documentation of AI usage
+    └── LICENSE			                  # MIT License
+
 
 ## Architecture
 
