@@ -68,9 +68,6 @@ Create your free Supabase project this web app will depends on Supabase's built-
 
 ## Built with
 
-React and Vite on the front end, Express and PostgreSQL on the back end. The
-client is on GitHub Pages, the API on (host), the database on (host).
-
 React and Vite on the front end. Used Supabase for the login and the Postgres database. The app talks to the Supabase straight from the browser, 
 so I do not have a server of my own. The site is hosted on Render as a static site.
 
