@@ -105,9 +105,8 @@ Page 10 is the decision page if you do not know which to pick.
   **Set up the database**
   
   - Open your Supabase project, then the SQL editor.
-  - Run [PATH TO TABLES AND SCHEMA SQL] first.
-  - Then run [PATH TO ROW LEVEL SECURITY SQL].
-  - Policies need SELECT, INSERT, UPDATE, and DELETE, or edits fail.
+  - Run the `supabase/schema.sql`. this creates the tables (with all the columns) and the Row Level Security policies.
+  - This project will need four policies: SELECT, INSERT, UPDATE, and DELETE. Without UPDATE, the editing fails.
 
 **Set up the client.**
 
