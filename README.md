@@ -105,37 +105,24 @@ never live there. They go somewhere else:
 Page 10 is the decision page if you do not know which to pick.
 
 ## Running it yourself
-  `Set up the database`
-    Open your Supabase project, then the SQL editor.
-    Run [PATH TO TABLES AND MIGRATION SQL] first.
-    Then run [PATH TO ROW LEVEL SECURITY SQL].
-    Policies need SELECT, INSERT, UPDATE, and DELETE, or edits fail.
+  **Set up the database**
+  
+    - Open your Supabase project, then the SQL editor.
+    - Run [PATH TO TABLES AND MIGRATION SQL] first.
+    - Then run [PATH TO ROW LEVEL SECURITY SQL].
+    - Policies need SELECT, INSERT, UPDATE, and DELETE, or edits fail.
 
-**The whole stack.** Needs a PostgreSQL, either local or hosted.
+**Set up the client.**
 
-    # 1. the database
-    docker run --name my-pg -e POSTGRES_PASSWORD=devpassword \
-      -e POSTGRES_DB=haunted -p 5432:5432 -d postgres:17
-
-    # 2. the API
-    cd server
-    npm install
-    cp .env.example .env        # check DATABASE_URL
-    npm run db:reset            # creates the tables and adds sample rows
-    npm run dev                 # http://localhost:3000
-
-    # 3. the client, in another terminal
     cd client
     npm install
     cp .env.example .env     # then fill in the two values
     npm run dev              # http://localhost:5173
 
-
-Check the API on its own before you blame the client:
-
-    curl http://localhost:3000/healthz     # is the process alive
-    curl http://localhost:3000/readyz      # is the database reachable
-    curl http://localhost:3000/api/sightings
+  **Start**
+  
+    Open http://localhost:5173 in your browser or in the VS Code. You should be able to see a login/sign-up page with a "Continue as guest" option. 
+    After signing up (or choosing guest mode), you will land on the Home screen with a brew stats and a button to add your first brew.
 
 ## Environment variables
 
@@ -144,34 +131,21 @@ placeholder values.
 
 | Name | Where | What it is |
 | --- | --- | --- |
-| `DATABASE_URL` | server | PostgreSQL connection string. Contains a password |
-| `CORS_ORIGINS` | server | comma-separated origins allowed to call the API |
-| `NODE_ENV` | server | `production` on your host |
-| `PORT` | server | **set by the host**, do not set it yourself |
-| `VITE_USE_MOCK_API` | client, at build time | only `false` turns demo mode off; unset means on |
-| `VITE_API_BASE_URL` | client, at build time | your API's public URL, no trailing slash |
+| `VITE_SUPABASE_URL` | client, at build time | Supabase project URL |
+| `VITE_SUPABASE_ANON_KEY` | client, at build time | Supabase public (anon) key |
 
-Every `VITE_` value is compiled into the built JavaScript and is **public**.
-Never put a key, a password or a connection string in one.
+The VITE_ value is compiled into the built JavaScript, so it is public. The anon key is meant to be public.
+What protects the data is the Row Level Security in the database (Supabase). Never put a service_role key in the client.
 
 ## Deploying
 
-**Client, to GitHub Pages.** Already wired up in
-`.github/workflows/deploy-pages.yml`. Two one-time steps:
-
-1. **Settings > Pages > Build and deployment > Source: GitHub Actions.** Without
-   this the workflow goes green and publishes nothing.
-2. Nothing else, until your API is live. Demo mode is the default, so the first
-   deploy works on its own. When the API is up, add `VITE_USE_MOCK_API` = `false`
-   and `VITE_API_BASE_URL` under **Settings > Secrets and variables > Actions >
-   Variables**, then re-run the workflow.
-
-The repository must be **public** for Pages to serve it on a free account.
-
-**API and database.** Not automated here, because most hosts deploy straight from
-your repository with no workflow at all. Point your host at the `server/` folder,
-set the environment variables in its dashboard, and run `server/db/schema.sql`
-once against the hosted database.
+| Setting | Value |  
+| --- | --- |
+| Branch | main |
+| Root Directory | client |
+| Build Command	| npm install && npm run build |
+| Publish | Directory	dist |
+| Environment variables |	VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY |
 
 ## Project structure
 
