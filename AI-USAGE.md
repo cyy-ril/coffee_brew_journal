@@ -76,12 +76,12 @@ Note: All the commits are 2026-09-30. I worked on the code in VS Code before tha
  
 - **File:** client/src/App.jsx and client/src/App.css
 - **Commit:** https://github.com/cyy-ril/coffee_brew_journal/commit/35e2726fbf9bc7f7819ad9079e0925cc677cfa70
-- **What it does and why it is built this way:** This shows at the bottom of every page in my web app. It also shows the app name with the cup icon from Flaticon, it also have my LinkedIn and GitHub links, and the copyright. The year comes from new Date().getFullYear(), so it changes by itself and I never have to edit it.
+- **What it does and why it is built this way:** This shows at the bottom of every page in my web app. It also shows the app name with the cup icon from Flaticon, it also have my LinkedIn and GitHub links, and the copyright. The year comes from new Date().getFullYear(), so it changes by itself and so that I don't have to edit it.
 ### Written by me: the buttons component
  
 - **File:** client/src/App.jsx
 - **Commit:** https://github.com/cyy-ril/coffee_brew_journal/commit/35e2726fbf9bc7f7819ad9079e0925cc677cfa70
-- **What it does and why it is built this way:** I made the Button that I use everywhere in the app. It takes a variant, a size, and an icon, and it builds the CSS class names from that. In this way each button looks the same, and if I want to change how buttons look, I  can also change it in one place. The default type is "button", so that the button does not submit a form by accident.
+- **What it does and why it is built this way:** I made the Button that I use everywhere in the app. It takes a variant, a size, and an icon, and it builds the CSS class names from that. This way each button looks the same, and if I want to change how buttons look, I  can also change it in one place. The default type is "button", so that the button does not submit a form by accident.
 ### Written by me: the home page with the recent brews
  
 - **File:** client/src/App.jsx 
@@ -92,11 +92,6 @@ Note: All the commits are 2026-09-30. I worked on the code in VS Code before tha
 - **File:** client/src/App.jsx 
 - **Commit:** https://github.com/cyy-ril/coffee_brew_journal/commit/35e2726fbf9bc7f7819ad9079e0925cc677cfa70
 - **What it does and why it is built this way:** For the Journal page. If a log is opened, it shows the details such as the numbers, the star rating, the cupping bars, the flavor tags, and the notes that user inputted, with an Edit, Close, and Delete buttons. For the search bar, if nothing matches, it will show a "No brews match this search" message. 
-### Written by me: the flavor picker component
- 
-- **File:** client/src/App.jsx
-- **Commit:** https://github.com/cyy-ril/coffee_brew_journal/commit/35e2726fbf9bc7f7819ad9079e0925cc677cfa70
-- **What it does and why it is built this way:** This is the component where the user picks their flavor notes for a brew. It has a search box and a row of category buttons. If the user types, then it will search the flavor list. And if the user clicks a category instead, it will show all the flavors in that category. Clicking a flavor runs the toggleTag, if the flavor is already picked, it takes it out, and if not, it will add it. The picked flavors also show a small × to remove them. I built it this way so the user can find a flavor fast by typing or by browsing.
 ### Written by me: the banner message
  
 - **File:** client/src/App.jsx 
@@ -107,20 +102,12 @@ Note: All the commits are 2026-09-30. I worked on the code in VS Code before tha
 - **File:** client/src/App.jsx
 - **Commit:** https://github.com/cyy-ril/coffee_brew_journal/commit/35e2726fbf9bc7f7819ad9079e0925cc677cfa70
 - **What it does and why it is built this way:** The navbar shows the logo, the app name, and a button for each page such as Home, Beans, Log Brew, Journal plus a log out/ exit button. When using on a phone, the links are hidden in a menu button. When the user picks a page, the goToPage changes the page and closes the menu. If the user is a guest, a banner will show that brews are saved on this device only, and the log out button will show "Exit guest mode" instead.
-### Written by me: the edit and cancel functions for the forms
- 
-- **File:** client/src/App.jsx
-- **Commit:** https://github.com/cyy-ril/coffee_brew_journal/commit/35e2726fbf9bc7f7819ad9079e0925cc677cfa70
-- **What it does and why it is built this way:** The startEditBean remembers which bean is being edited, it fills the bean form with a bean's saved values, and will opens the form. It uses || '' so that a missing value becomes empty text and the inputs do not break. For the cancelBeanForm this closes the form, forgets the bean being edited, and puts the form back to its empty starting values. Then lastly is the cancelLogForm it does the same for the brew log form, and then takes the user back to the Home page. I made them so that Cancel will always leave the form clean.
+
 ### Written by me: the layout CSS for the stars, search bar, navbar, bean cards, journal details, log-in page, and flavor tags
  
 - **File:** client/src/App.css
 - **Commit:** https://github.com/cyy-ril/coffee_brew_journal/commit/35e2726fbf9bc7f7819ad9079e0925cc677cfa70
 - **What it does and why it is built this way:** 
-  - **Stars and search bar:** 
-    - For the .star-rating this puts the stars in a row with a small gap, and 
-    - .star-rating button will remove the default button look so that each star is clickable. 
-    - .search-bar input this adds a padding on the left so that the typed text does not sit on top of the search icon.
   - **Navbar:** 
     - .navbar puts the logo on the left and the links on the right. 
     - .nav-brand and .nav-logo img keeps the logo and the app name together and it also make the logo fit.
