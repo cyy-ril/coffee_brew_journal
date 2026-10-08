@@ -196,11 +196,8 @@ Your name, and a link. Course and section.
 
 - the badge above, or one you like better
 - a line naming which assistant you used and how much of the work it touched
-- a link to [AI-USAGE.md](AI-USAGE.md), where the full account lives
-
-Keep the detail in `AI-USAGE.md` rather than here. This section is the summary a
-visitor reads; that file is the record the badge is graded from.
+- [AI-USAGE.md](https://github.com/cyy-ril/coffee_brew_journal/blob/main/AI-USAGE.md)
 
 ## Licence
 
-MIT, see [LICENSE](LICENSE). Put your own name in it.
+MIT, see [LICENSE](https://github.com/cyy-ril/coffee_brew_journal/blob/main/LICENSE).
