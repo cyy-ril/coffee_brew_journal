@@ -38,7 +38,7 @@ VITE_SUPABASE_ANON_KEY = your-anon-public-key
 Create your free Supabase project this web app will depends on Supabase's built-in authentication. In your projects in the SQL editor, run the schema file to create the beans and logs tables. Then go to the Authentication settings and turn on the email/password sign-in. 
 
 
-[Screenshot]
+[Screenshots of the main screen]
 
 [Login Page]
 <img width="1919" height="1061" alt="Login-page" src="https://github.com/user-attachments/assets/8af2add3-74ab-4b3b-8a7f-6c5e96dce5dc" />
