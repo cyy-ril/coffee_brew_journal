@@ -194,9 +194,7 @@ Your name, and a link. Course and section.
 
 ![Built with Claude](https://img.shields.io/badge/Made_with-Claude-D97757?logo=anthropic&logoColor=white)
 
-- the badge above, or one you like better
-- a line naming which assistant you used and how much of the work it touched
-- [AI-USAGE.md](https://github.com/cyy-ril/coffee_brew_journal/blob/main/AI-USAGE.md)
+- [How I used AI go to -> AI-USAGE.md](https://github.com/cyy-ril/coffee_brew_journal/blob/main/AI-USAGE.md)
 
 ## Licence
 
