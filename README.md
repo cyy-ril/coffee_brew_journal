@@ -40,6 +40,21 @@ Create your free Supabase project this web app will depends on Supabase's built-
 
 ![A screenshot of the main screen]
 
+
+
+<img width="1919" height="1061" alt="Login-page" src="https://github.com/user-attachments/assets/8af2add3-74ab-4b3b-8a7f-6c5e96dce5dc" />
+
+
+
+
+
+
+
+
+
+
+
+
 [Login Page] [https://github.com/HAU-6APSI/student-6apsi-2215-cyy-ril/blob/main/project/website-screenshots/Login-page.png]
 
 [Signup Page] [https://github.com/HAU-6APSI/student-6apsi-2215-cyy-ril/blob/main/project/website-screenshots/Signup-page.png]
