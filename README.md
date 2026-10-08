@@ -163,7 +163,7 @@ What protects the data is the Row Level Security in the database (Supabase). Nev
     │   └── vite.config.js
     ├── supabase/
     │   └── schema.sql                # full database setup (tables, columns, RLS policies); this is run in the Supabase SQL Editor
-    │   └── alter-tables.sql		      #only for the older version of my database; this is already included in schema.sql	
+    │   └── alter-tables.sql		      # only for the older version of my database; this is already included in schema.sql	
     ├── server/			                  # not used
     ├── README.md		                  # project overview and setup instructions
     ├── AI-USAGE.md		                # documentation of AI usage
@@ -172,25 +172,22 @@ What protects the data is the Row Level Security in the database (Supabase). Nev
 
 ## Architecture
 
-Three or four sentences, or a small diagram. Which piece talks to which, and
-where each one is hosted.
+The browser runs the React app, which is being hosted as a static site on Render. The app calls Supabase directly for the login (in the Supabase Auth) and for the data. 
+The Row Level Security rules in the database make sure that a signed-in user can only read and change their own beans and brews. 
+While the Guests have no account, so their beans and brews are saved in the browser's localStorage and it does not reach the database.
 
 ## What I would do next
 
-Three honest bullets. This paragraph is worth more than it looks.
+- A chart of my best brews
+- Let the guests move their brews into an account
+- Add a photo of the bean bag to each bean.
+- A forget password feature
 
 ## Author
 
 Your name, and a link. Course and section.
 
 ## AI use
-
-If you used AI while building this, say so here. Honest disclosure is the
-standard in this course and increasingly outside it, and reporting heavy use
-accurately costs you nothing.
-
-This section is the last 10 points of the finals badge, and it wants three
-things:
 
 ![Built with AI assistance](https://img.shields.io/badge/built%20with-AI%20assistance-0b5fff)
 
