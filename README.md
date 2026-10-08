@@ -192,7 +192,7 @@ Your name, and a link. Course and section.
 
 ## AI use
 
-![Built with Claude](https://img.shields.io/badge/built%20with-AI%20assistance-0b5fff)
+![Built with Claude](https://img.shields.io/badge/Made_with-Claude-D97757?logo=anthropic&logoColor=white)
 
 - the badge above, or one you like better
 - a line naming which assistant you used and how much of the work it touched
