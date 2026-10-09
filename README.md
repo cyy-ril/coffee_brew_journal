@@ -26,18 +26,18 @@ npm install
 ```
 **Environment and configuration** 
 
-> Create a file called .env in your project main folder.
-> This is where you put your Supabase keys so the app can use them, without putting them directly in the code.
+- Create a file called .env in your project main folder.
+- This is where you put your Supabase keys so the app can use them, without putting them directly in the code.
 ```
 VITE_SUPABASE_URL = your-project-ref.supabase.co
 VITE_SUPABASE_ANON_KEY = your-anon-public-key
 ```
 **How to set up and seed the database**
 
-> Create your free Supabase project this web app will depends on Supabase's built-in authentication.
-> Run the `supabase/schema.sql`. this creates the tables (with all the columns) and the Row Level Security policies.
-> This project will need four policies: SELECT, INSERT, UPDATE, and DELETE. Without UPDATE, the editing fails.
-> Then go to the Authentication settings and turn on the email/password sign-in.
+- Create your free Supabase project this web app will depends on Supabase's built-in authentication.
+- Run the `supabase/schema.sql`. this creates the tables (with all the columns) and the Row Level Security policies.
+- This project will need four policies: SELECT, INSERT, UPDATE, and DELETE. Without UPDATE, the editing fails.
+- Then go to the Authentication settings and turn on the email/password sign-in.
 
 **Set up the client.**
 
