@@ -1,9 +1,5 @@
 # Coffee Brew Journal
 
-> **Replace this whole file.** It is a worked example of the README your project
-> will be graded from, not a file to leave as it is. Start with
-> [START-HERE.md](START-HERE.md).
-
 ## 1. Overview
 
 My project Coffee Brew Journal is a web app for home baristas to keep track of their pour-over and espresso brews, this lets you keep a library of beans, log the recipe and result of each brew (dose, yield, grind, water temp, time, ratio, rating, tasting notes) a user made, and there is also a search or filter for the past brews to find what worked. It's built for anyone who wants to repeat their coffee instead of guessing what to make every time a user makes coffee.
@@ -14,12 +10,14 @@ My project Coffee Brew Journal is a web app for home baristas to keep track of t
 ## 2. Setup and installation
 
 **What to install first (runtime, database, tools):**
-Get the latest version of Node.js. This also need a code editor (VS Code recommended) with a git for cloning. You'll also need a free Supabase account, this is where your data and user accounts live.
+> Get the latest version of Node.js.
+> This also need a code editor (VS Code recommended) with a git for cloning.
+> You'll also need a free Supabase account, this is where your data and user accounts live.
 
 **How to get the code (clone)**
 ```bash
-git clone <your-repo-url>
-cd <your-repo-folder>
+git clone https://github.com/cyy-ril/coffee_brew_journal.git
+cd coffee_brew_journal
 ```
 **How to install dependencies**
 ```bash
@@ -28,15 +26,30 @@ npm install
 ```
 **Environment and configuration** 
 
-Create a file called .env in your project main folder. This is where you put your Supabase keys so the app can use them, without putting them directly in the code.
+> Create a file called .env in your project main folder.
+> This is where you put your Supabase keys so the app can use them, without putting them directly in the code.
 ```
 VITE_SUPABASE_URL = your-project-ref.supabase.co
 VITE_SUPABASE_ANON_KEY = your-anon-public-key
 ```
 **How to set up and seed the database**
 
-Create your free Supabase project this web app will depends on Supabase's built-in authentication. In your projects in the SQL editor, run the schema file to create the beans and logs tables. Then go to the Authentication settings and turn on the email/password sign-in. 
+> Create your free Supabase project this web app will depends on Supabase's built-in authentication.
+> Run the `supabase/schema.sql`. this creates the tables (with all the columns) and the Row Level Security policies.
+> This project will need four policies: SELECT, INSERT, UPDATE, and DELETE. Without UPDATE, the editing fails.
+> Then go to the Authentication settings and turn on the email/password sign-in.
 
+**Set up the client.**
+
+    cd client
+    npm install
+    cp .env.example .env     # then fill in the two values
+    npm run dev              # http://localhost:5173
+
+  **Start**
+  
+    Open http://localhost:5173 in your browser or in the VS Code. You should be able to see a login/sign-up page with a "Continue as guest" option. 
+    After signing up (or choosing guest mode), you will land on the Home screen with a brew stats and a button to add your first brew.
 
 [Screenshots of the main screen]
 
@@ -73,25 +86,6 @@ Create your free Supabase project this web app will depends on Supabase's built-
 
 React and Vite on the front end. Used Supabase for the login and the Postgres database. The app talks to the Supabase straight from the browser, 
 so I do not have a server of my own. The site is hosted on Render as a static site.
-
-## Running it yourself
-  **Set up the database**
-  
-  - Open your Supabase project, then the SQL editor.
-  - Run the `supabase/schema.sql`. this creates the tables (with all the columns) and the Row Level Security policies.
-  - This project will need four policies: SELECT, INSERT, UPDATE, and DELETE. Without UPDATE, the editing fails.
-
-**Set up the client.**
-
-    cd client
-    npm install
-    cp .env.example .env     # then fill in the two values
-    npm run dev              # http://localhost:5173
-
-  **Start**
-  
-    Open http://localhost:5173 in your browser or in the VS Code. You should be able to see a login/sign-up page with a "Continue as guest" option. 
-    After signing up (or choosing guest mode), you will land on the Home screen with a brew stats and a button to add your first brew.
 
 ## Environment variables
 
