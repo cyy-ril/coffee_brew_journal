@@ -5,7 +5,8 @@
 My project Coffee Brew Journal is a web app for home baristas to keep track of their pour-over and espresso brews, this lets you keep a library of beans, log the recipe and result of each brew (dose, yield, grind, water temp, time, ratio, rating, tasting notes) a user made, and there is also a search or filter for the past brews to find what worked. It's built for anyone who wants to repeat their coffee instead of guessing what to make every time a user makes coffee.
 
 **Live site:** https://coffee-brew-journal.onrender.com
-**Demo video:** [Coffee Brew Journal Demo Presentation](https://drive.google.com/file/d/1RixcobPKDrEy4odNF5D05tGHu0n2P8v3/view?usp=drive_link)
+
+**Demo video:** [Coffee Brew Journal Video Presentation](https://drive.google.com/file/d/1RixcobPKDrEy4odNF5D05tGHu0n2P8v3/view?usp=drive_link)
 
 ## 2. Setup and installation
 
