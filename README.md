@@ -8,6 +8,10 @@ My project Coffee Brew Journal is a web app for home baristas to keep track of t
 
 **Demo video:** [Coffee Brew Journal Video Presentation](https://drive.google.com/file/d/1RixcobPKDrEy4odNF5D05tGHu0n2P8v3/view?usp=drive_link)
 
+**Screenshots of the main screen**
+
+<img width="1919" height="1057" alt="Home-page" src="https://github.com/user-attachments/assets/281353b1-599d-461d-9153-965b5b33aa2f" />
+
 ## 2. Setup and installation
 
 **What to install first (runtime, database, tools):**
@@ -51,11 +55,6 @@ VITE_SUPABASE_ANON_KEY = your-anon-public-key
   
   - Open http://localhost:5173 in your browser or in the VS Code. You should be able to see a login/sign-up page with a "Continue as guest" option.
   - After signing up (or choosing guest mode), you will land on the Home screen with a brew stats and a button to add your first brew.
-
-**Screenshots of the main screen**
-
-<img width="1919" height="1057" alt="Home-page" src="https://github.com/user-attachments/assets/281353b1-599d-461d-9153-965b5b33aa2f" />
-
 
 ## What it does
 
