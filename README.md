@@ -10,9 +10,9 @@ My project Coffee Brew Journal is a web app for home baristas to keep track of t
 ## 2. Setup and installation
 
 **What to install first (runtime, database, tools):**
-> Get the latest version of Node.js.
-> This also need a code editor (VS Code recommended) with a git for cloning.
-> You'll also need a free Supabase account, this is where your data and user accounts live.
+- Get the latest version of Node.js.
+- This also need a code editor (VS Code recommended) with a git for cloning.
+- You'll also need a free Supabase account, this is where your data and user accounts live.
 
 **How to get the code (clone)**
 ```bash
