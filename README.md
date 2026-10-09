@@ -54,25 +54,8 @@ VITE_SUPABASE_ANON_KEY = your-anon-public-key
 
 **Screenshots of the main screen**
 
-Login Page
-<img width="1919" height="1061" alt="Login-page" src="https://github.com/user-attachments/assets/8af2add3-74ab-4b3b-8a7f-6c5e96dce5dc" />
-
-Signup Page
-<img width="1919" height="1061" alt="Signup-page" src="https://github.com/user-attachments/assets/17b41ab1-d816-4da4-a842-57971484eccc" />
-
-Home Page
 <img width="1919" height="1057" alt="Home-page" src="https://github.com/user-attachments/assets/281353b1-599d-461d-9153-965b5b33aa2f" />
 
-Bean Library Page
-<img width="1900" height="1057" alt="Beanlibrary-page-withupdate" src="https://github.com/user-attachments/assets/9ba09510-7832-494b-92ca-ac5ca19d9b1d" />
-        
-Log A Brew Page
-<img width="1895" height="1051" alt="LogABrew-page-withupdate1" src="https://github.com/user-attachments/assets/12e39d97-98e8-42d0-b59b-34d9eecc35aa" />
-<img width="1905" height="1046" alt="LogABrew-page-withupdate2" src="https://github.com/user-attachments/assets/6bf1991a-1a6d-4bcb-a890-cb4cbba74da5" />
-
-Journal Page
-<img width="1919" height="1065" alt="Journal-page-withupdate1" src="https://github.com/user-attachments/assets/87fc44e3-6eca-416d-bd3e-94b5c7272e22" />
-<img width="1912" height="1053" alt="Journal-page-withupdate2" src="https://github.com/user-attachments/assets/3c19d454-3923-4e41-a607-052b9f421d3b" />
 
 ## What it does
 
