@@ -48,10 +48,10 @@ VITE_SUPABASE_ANON_KEY = your-anon-public-key
 
   **Start**
   
-    Open http://localhost:5173 in your browser or in the VS Code. You should be able to see a login/sign-up page with a "Continue as guest" option. 
-    After signing up (or choosing guest mode), you will land on the Home screen with a brew stats and a button to add your first brew.
+  - Open http://localhost:5173 in your browser or in the VS Code. You should be able to see a login/sign-up page with a "Continue as guest" option.
+  - After signing up (or choosing guest mode), you will land on the Home screen with a brew stats and a button to add your first brew.
 
-[Screenshots of the main screen]
+**[Screenshots of the main screen]**
 
 [Login Page]
 <img width="1919" height="1061" alt="Login-page" src="https://github.com/user-attachments/assets/8af2add3-74ab-4b3b-8a7f-6c5e96dce5dc" />
