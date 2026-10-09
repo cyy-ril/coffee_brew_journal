@@ -158,16 +158,16 @@ While the Guests have no account, so their beans and brews are saved in the brow
 
 ## Author
 Cyril Cris Bacani
-[Github Profile Link](https://github.com/cyy-ril)
-CS - 403
 
-Your name, and a link. Course and section.
+[Github Profile Link](https://github.com/cyy-ril)
+
+CS - 403
 
 ## AI use
 
 ![Built with Claude](https://img.shields.io/badge/Made_with-Claude-D97757?logo=anthropic&logoColor=white)
 
-- [How I used AI -> AI-USAGE.md](https://github.com/cyy-ril/coffee_brew_journal/blob/main/AI-USAGE.md)
+- See how I used AI [AI-USAGE.md](https://github.com/cyy-ril/coffee_brew_journal/blob/main/AI-USAGE.md)
 
 ## Licence
 
